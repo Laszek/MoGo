@@ -1,5 +1,5 @@
 (function (window, document, undefined) {
-window.onload = ()=>{
+
     
     //--------------------CHANGING START CONTENT-----------------------//
     let stContent = Array.from(document.querySelectorAll(".st-cont"));
@@ -113,5 +113,6 @@ window.onload = ()=>{
     for(let k=0; k<sliders.length;k++){
         slidersObjects.push(new Slider(sliders[k]));
     }
+    window.onload = ()=>{
 };
 })(window, document);
