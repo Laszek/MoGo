@@ -1,5 +1,5 @@
 (function (window, document, undefined) {
-
+    'use strict';
     
     //--------------------CHANGING START CONTENT-----------------------//
     let stContent = Array.from(document.querySelectorAll(".st-cont"));
