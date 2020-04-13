@@ -1,4 +1,5 @@
 (function (window, document, undefined) {
+    window.onload = ()=>{
     'use strict';
     
     //--------------------CHANGING START CONTENT-----------------------//
@@ -113,6 +114,6 @@
     for(let k=0; k<sliders.length;k++){
         slidersObjects.push(new Slider(sliders[k]));
     }
-    window.onload = ()=>{
+    
 };
 })(window, document);
