@@ -1,5 +1,5 @@
 (function (window, document, undefined) {
-    'use strict';
+window.onload = ()=>{
     
     //--------------------CHANGING START CONTENT-----------------------//
     let stContent = Array.from(document.querySelectorAll(".st-cont"));
@@ -44,8 +44,8 @@
     
     //------------------PHOTO--HOVER-------------------//
     
-    let photos = document.querySelectorAll(".photo-to-hover .photo");
-    let hoverLayer = document.querySelectorAll(".photo .img-hover");
+    var photos = document.querySelectorAll(".photo-to-hover .photo");
+    var hoverLayer = document.querySelectorAll(".photo .img-hover");
     
     for(let j=0;j<hoverLayer.length;j++){
         photos[j].addEventListener("mouseover", ()=>{hoverLayer[j].style.opacity ='1';});
@@ -59,7 +59,7 @@
     coll[0].lastElementChild.style.transform = 'rotate(180deg)';
     for (let i = 0; i < coll.length; i++) {
       coll[i].addEventListener("click", function() {
-        let content = this.nextElementSibling;
+        var content = this.nextElementSibling;
           for(let u of coll){
               u.nextElementSibling.style.display = "none";
               u.lastElementChild.style.transform = 'rotate(0deg)';
@@ -113,4 +113,5 @@
     for(let k=0; k<sliders.length;k++){
         slidersObjects.push(new Slider(sliders[k]));
     }
+};
 })(window, document);
