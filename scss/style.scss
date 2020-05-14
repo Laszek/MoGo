@@ -4,54 +4,56 @@
 @import '_start.scss';
 @import '_content.scss';
 
-*{
+
+*, *::after, *::before{
     box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     font-family: $main-font;
-    font-size: 20px;
     margin:0;
-    width:100vw;
     overflow-x: hidden;
 }
 
 h1 {
     font-family: $main-font;
-    font-weight: 2000;
-    font-size:6em;
+    font-size:2rem;
     text-align: center;
     margin:0 20px 0 20px;
     line-height: 120%;
 }
 
 h2 {
-    font-family: $header-font;
-    font-size:4em;
-    margin:20px;
+    p{
+        font-size:4rem;
+        font-family: $header-font;
+        margin:0;
+    }
+    font-family: $main-font;
+    font-size:6rem;
+    margin:.5em;
+}
+.mg-content h2{
+    p{
+        font-size:2rem;
+        font-family: $header-font;
+        margin:.6em;
+    }
+    font-family: $main-font;
+    font-size:3rem;
+    margin:.5em;
 }
 
 h3{
     font-family: $main-font;
-    font-size:2.5em;
-    margin:20px;
-    line-height: 90%;
-    margin-bottom: 40px;
-    }
-
-h4 {
-    font-family: $header-font;
-    font-size:1.7em;
-    margin:20px;
-    line-height: 50%;
-}
-
-h5 {
-    font-weight: 600;
-    line-height: 1.5em;
+    font-size:1.3rem;
     margin:0;
-    font-family: $main-font;
-}
-h6{
+    }
+h3{
     font-size:1em;
     margin:0;
     padding-bottom:10px;
@@ -100,8 +102,9 @@ b {
     font-size:2em;
 }
 
-strong {
-     font-size:1.5em;
+cite {
+    font-size:1.5rem;
+    font-weight:bold;
     font-family: $header-font;
 }
 
